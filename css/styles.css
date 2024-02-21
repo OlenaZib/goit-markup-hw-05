@@ -819,3 +819,7 @@ fill: #FFFFFF;
   margin-left: 16px;
 
 }
+.footer-botton:hover,
+.footer-botton:focus {
+background-color: #404BBF;
+}
