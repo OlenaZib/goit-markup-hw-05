@@ -595,6 +595,12 @@ text-align: center;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: 0px solid transparent;
  padding-left: 38px ;
+ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reviw-form-field-input:focus {
+   border-color: #4D5AE5;
+   fill: #2E2F42;
+
 }
 .reviw-form-field-wrapper {
   margin-bottom: 8px;
@@ -616,5 +622,76 @@ text-align: center;
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  fill: #2E2F42;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+ 
+.reviw-form-field-input:focus +.reviw-form-input-icon {
+  fill: #4D5AE5;
+}
+
+.reviw-form-field-comment {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+border-radius: 4px;
+height: 120px;
+padding-left: 16px;
+padding-top: 8px;
+resize: none;
+outline: 0px solid transparent;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+color: #8e8f99;
+transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reviw-form-field-comment:focus {
+  border-color: #4D5AE5;
+}
+
+.reviw-form-field-comment::placeholder {
+  color: #8e8f99;
+}
+.reviw-form-own-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+border: 1px solid rgba(17,17,17,0.4);
+border-radius: 2px;
+cursor: pointer;
+}
+
+.reviw-form-checkbox:checked + .reviw-checkbox-label > .reviw-form-own-checkbox {
+  
+  background-color: #404bbf;
+  border-color: #404BBF;
+
+}
+.reviw-form-checkbox:focus + .reviw-checkbox-label > .reviw-form-own-checkbox {
+  outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+.reviw-form-own-checkbox-icon {
+  fill: #FFFFFF;
+  opacity: 0;
+}
+.reviw-form-checkbox:checked + .reviw-checkbox-label .reviw-form-own-checkbox-icon {
+  opacity: 1;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
