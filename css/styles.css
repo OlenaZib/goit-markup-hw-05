@@ -620,10 +620,15 @@ text-align: center;
 }
 .reviw-form-field-wrapper {
   margin-bottom: 8px;
+  
+}
+.comment {
+  margin-bottom: 16px;
 }
 .reviw-form-input-wrapper {
   position: relative;
   
+ 
 }
 .reviw-form-field-label {
   display: block;
